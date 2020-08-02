@@ -1,0 +1,295 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>SoundKit Documentation</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet"/>
+    <script src="assets/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" width="150" height="30" class="d-inline-block align-top" alt="">
+            <span style="font-size: 9px;">Documentation</span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#preparing">Preparing</a>
+                <a class="nav-item nav-link" href="#installation">Installation</a>
+                <a class="nav-item nav-link" href="#configuration">Configuration</a>
+                <a class="nav-item nav-link" href="#faqs">Faqs</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container pt-5">
+    <div class="alert alert-success mb-4">
+        Thank you for purchasing SoundKit mobile app.
+        If you have any questions that are beyond the scope of this documentation, please feel free to contact us through our
+        <a href="https://music.krea8iv.com/support">support</a>.
+    </div>
+
+    <hr/>
+    <h4>Table of Contents</h4>
+    <ol>
+        <li><a href="#preparing">Preparing...</a></li>
+        <li><a href="#installation">Installation process...</a></li>
+        <li><a href="#configuration">Quick Setup...</a></li>
+        <li><a href="#faqs">FAQ...</a></li>
+
+    </ol>
+
+    <hr/>
+    <section id="preparing">
+        <h5>1. Preparing</h5>
+        <p>
+            Before you can run this code for both ios or android you will need to setup your computer to run react native</p>
+        <ol>
+            <li>You will need a MAC to compile for iphone(ios)</li>
+            <li>I recommend MAC for android as well but you can still compile on windows for android</li>
+            <li>You need an editor to edit the code files we recommend VSCode or Webstorm e.t.c</li>
+        </ol>
+    </section>
+    <hr/>
+
+    <section id="installation">
+        <h5>1. Installation</h5>
+        <p>
+            Do the following to complete the installation process</p>
+        <h5>For MAC</h5>
+
+        <ul>
+            <li>Download Xcode latest version atleast 10.0 from <a target="_blank" href="https://developer.apple.com/xcode/">here</a> </li>
+            <li>Open a terminal install nodejs by typing <strong>brew install node</strong> <strong>(Make sure its node 10 or below )</strong></li>
+            <li>ALso install watchman by typing in your terminal <strong>brew install watchman</strong></li>
+            <li>Install react native with <strong>npm install -g react-native-cli</strong> </li>
+            <li>Install Yarn as well with <strong>brew install yarn</strong></li>
+            <li>Create your first react native app by typing in terminal <strong>react-native init AwesomeProject</strong></li>
+            <li>Now switch to the new app folder by typying <strong>cd AwesomeProject</strong></li>
+            <li>Run your app with <blockquote><code>react-native run ios</code></blockquote></li>
+            <li>If everything is success you should see your simulator with the react native default app welcome message else see the frequently ask questions before</li>
+
+            <li>But if you have problem, kindly read the full how to here at the <a target="_blank" href="https://facebook.github.io/react-native/docs/getting-started.html">official react native documentation under Building projects with Native Code</a></li>
+        </ul>
+
+        <h6>Run SoundKit App</h6>
+        <ul>
+            <li>Now download your SoundKit code from envato, extract to a folder on your computer.</li>
+            <li>In your terminal <strong>cd path/to/extracted/folder/app</strong></li>
+            <li>Type in your terminal it can take up to 10minutes  <blockquote><code>yarn install</code></blockquote></li>
+            <li><strong><span style="color:red">Very Important for ios</span> After this , kindly replace this file with the one included in your download file:  node_modules/react-native/React/Base/RCTBridgeModule.h</strong></li>
+            <li>
+                Wait for it to complete after successful you run the app with either
+                <blockquote><code>react-native run-ios</code></blockquote>
+                or
+                <blockquote><code>react-native run-android</code></blockquote>
+            </li>
+            <li>
+                Also if you notice slowness in the app on android you can always run the app in the release by using
+                <blockquote><code>react-native run-android --variant=release</code></blockquote>
+            </li>
+            <li>
+                If the Ios does not show or close , you need to open the project in xcode and run from there , go to this folder ios/ and open
+                SoundKit.xcodeproj
+            </li>
+
+
+        </ul>
+
+        <h5>For WIndows</h5>
+
+        <ul>
+            <li>We encourage to install Chocolatey to manage package on Windows , <a target="_blank" href="https://chocolatey.org/install">Install Chocolatey from here </a></li>
+            <li>Now install node,python with the command <strong>choco install -y nodejs.install python2 jdk8 <strong>(Make sure its node 10 or below )</strong></strong></li>
+            <li>Now install react native with this command <strong>npm install -g react-native-cli</strong></li>
+            <li>Install Android Studio<br/>
+                <a target="_blank" href="https://developer.android.com/studio/index.html">Download and install Android Studio</a>. Choose a "Custom" setup when prompted to select an installation type Make sure the boxes next to all of the following are checked:
+                <ol>
+                    <li>Android SDK</li>
+                    <li>Android SDK Platform</li>
+                    <li>Performance (Intel ® HAXM)</li>
+                    <li>Android Virtual Device</li>
+                </ol>
+                Then, click "Next" to install all of these components.
+            </li>
+            <li>Install yarn with <strong>choco install yarn</strong> in your terminal</li>
+            <li>Create your first react native app by typing in terminal <strong>react-native init AwesomeProject</strong></li>
+            <li>Now switch to the new app folder by typying <strong>cd AwesomeProject</strong></li>
+            <li>Run your app with <blockquote><code>react-native run android</code></blockquote></li>
+            <li>If everything is success you should see your simulator with the react native default app welcome message else see the frequently ask questions before</li>
+
+            <li>But if you have problem, kindly read the full how to here at the <a target="_blank" href="https://facebook.github.io/react-native/docs/getting-started.html">official react native documentation under Building projects with Native Code</a></li>
+
+        </ul>
+
+        <h6>Run SoundKit App</h6>
+        <ul>
+            <li>Now download your SoundKit code from envato, extract to a folder on your computer.</li>
+            <li>In your terminal <strong>cd path/to/extracted/folder/app</strong></li>
+            <li>Type in your terminal it can take up to 10minutes  <blockquote><code>yarn install</code></blockquote></li>
+            <li>
+                Wait for it to complete after successful you run the app with either
+                <blockquote><code>react-native run android</code></blockquote>
+            </li>
+        </ul>
+
+
+    </section>
+
+    <hr/>
+
+    <section id="configuration">
+        <h4>Configurations</h4>
+        <p>As you run the app, you have use our demo api and website for rending the app, but you need to change it your website this section explain the
+        configurations needed to achieve that</p>
+
+        <ul>
+            <li>Make sure you are running the latest version 2.0.2</li>
+            <li>
+                Go to your admin panel -> settings -> applications to set your own api key as shown below
+
+                <img src="assets/1.png"/>
+
+                <code>Make sure only alpha-numeric is used, no special character is allowed</code>
+            </li>
+            <li>Now open your SoundKit app code in an editor</li>
+            <li>
+                Navigate to src/config.js to set your website url and other configurations
+                <img src="assets/2.png"/>
+            </li>
+            <li>Replace 1 with your API Key you just set in your admin panel </li>
+            <li>Replace 2 with your site link for example <code>https://mymusic.com/</code> make / end the website link</li>
+            <li>Go back and run your code from the terminal, the content of the app should now show your website contents</li>
+        </ul>
+
+        <h5>Change Colors</h5>
+
+        <p>Changing colors is very easy and straight forward</p>
+        <ul>
+            <li>
+                Navigate to src/themes/light.js or src/themes/dark.js
+
+                <img src="assets/3.png"/>
+            </li>
+        </ul>
+
+        <h5>How to Change Home Slide Images</h5>
+
+        <p>You can change the images by going to src/images/ replace topo1.png,topo2.png and topo3.png with your images</p>
+
+        <p>You can easily change this images from your admin panel</p>
+
+        <h5>Change Logo</h5>
+        <p>
+            You can change your logo by replacing the file at src/images/logo.png with your own logo
+        </p>
+
+        <h5>Change App Icon</h5>
+        <h6>For Android</h6>
+        <p>You will need to replace the ic_launcher.png in each of the following folders with your ic_launcher.png</p>
+        <ul>
+            <li><code>android/app/src/main/res/mipmap-hdpi/ic_launcher.png</code></li>
+            <li><code>android/app/src/main/res/mipmap-mdpi/ic_launcher.png</code></li>
+            <li><code>android/app/src/main/res/mipmap-xhdpi/ic_launcher.png</code></li>
+            <li><code>android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png</code></li>
+            <li><code>android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png</code></li>
+        </ul>
+
+        <h6>For Ios</h6>
+
+        <p>You can change the icon from the xcode  see below, you can use software such as Icon set creator to create icons right for each iphone device</p>
+        <img src="assets/4.png"/>
+
+        <h5>Change Splash Screen COlor And Logo</h5>
+        <h6>For Android</h6>
+
+        <p>
+            You will need to replace the logo with your own image located at the following locations
+        </p>
+        <ol>
+            <li><code>android/app/src/main/res/drawable-hdpi/launch_screen.png</code></li>
+            <li><code>android/app/src/main/res/drawable-ldpi/launch_screen.png</code></li>
+            <li><code>android/app/src/main/res/drawable-mdpi/launch_screen.png</code></li>
+            <li><code>android/app/src/main/res/drawable-xhdpi/launch_screen.png</code></li>
+            <li><code>android/app/src/main/res/drawable-xxhdpi/launch_screen.png</code></li>
+            <li><code>android/app/src/main/res/drawable-xxxhdpi/launch_screen.png</code></li>
+        </ol>
+
+        <p>
+            TO change the background color, just change the color here
+            <code>android/app/src/main/res/values/colors.xml</code>
+        </p>
+
+        <h6>FOr Ios</h6>
+        <p>You can do this via the xcode, open the project in xcode and go to as indicated in the image below</p>
+        <img src="assets/5.png"/>
+
+        <h5>Facebook Setup</h5>
+
+        <p>
+            This is an advance section which require care to implement it , the project package name currently is <strong>com.krea8iv.SoundKit</strong>
+            and that is what the demo is using, which you need to change to yours something like <strong>com.domain.appName</strong>
+        </p>
+
+        <p>You can rename your project with the following instructions</p>
+
+        <h4>For Android</h4>
+        <ul>
+            <li>Open your terminal and locate your SoundKit code folder and run <strong>yarn global add react-native-rename</strong></li>
+            <li>Run this to rename to your package <strong>react-native-rename "App Name" -b com.domain.appName</strong></li>
+            <li>Make sure to change App Name to your app name</li>
+            <li>Also change the domain to your domain and appName to your app name without space</li>
+        </ul>
+
+        <h4>For ios</h4>
+        <p>You can do this in the Xcode see below </p>
+        <img src="assets/6.png"/>
+
+        <h5>Now Facebook Setup</h5>
+        <p>Make sure you have follow the instructions in the main script documentation to setup facebook for web and get your app ID ready now follow the instruction below</p>
+
+        <h6>For Android</h6>
+        <ul>
+            <li>Replace the value for fb_app_id <strong>android/app/src/main/res/values/strings.xml</strong></li>
+            <li>Also fb_login_protocol_scheme Make sure the value is like <strong>fbYourAPPID</strong> for example <strong>fb123432432</strong></li>
+        </ul>
+
+        <h6>For Ios</h6>
+
+        <p>Open this file <strong>ios/SoundKit/Info.plist</strong> and make similar changes as android as show in the image below</p>
+        <img src="assets/7.png"/>
+
+        <h5>Build Release APK and Release for ios</h5>
+        <p>
+            You can read more here <a target="_blank" href="https://facebook.github.io/react-native/docs/signed-apk-android">here</a>
+        </p>
+
+        <p>
+            Incase your app is reject by apple review team due to in - app purchase you have two method to get your app approved
+        </p>
+
+        <ol>
+            <li>You can temporary disable premium and store module from the admin -> application , once its approved you can enable it back</li>
+            <li>
+                Or setup the in app purchase for premium accounts, you still have to disable store module because in-app purchase does not support store
+
+                Follow the instruction here to setup in app purchase in your itunes account <a href="https://stackoverflow.com/questions/19556336/how-do-you-add-an-in-app-purchase-to-an-ios-application" target="_blank">https://stackoverflow.com/questions/19556336/how-do-you-add-an-in-app-purchase-to-an-ios-application</a>
+
+                Create two subscription products for monthly and yearly plan and set the product ID accordingly as show below
+
+                <img src="assets/8.png"/>
+            </li>
+        </ol>
+    </section>
+    <hr/>
+
+    <div class="pt-5">
+        <p>Copyright © 2018 <a href="https://SoundKit.krea8iv.com">SoundKit</a>. All rights reserved.</p>
+        <p> A product by krea8iv.</p>
+    </div>
+</div>
+</body>
+</html>

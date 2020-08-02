@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Soundkit</string>
+    <string name="fb_app_id">386853085405596</string>
+    <string name="fb_login_protocol_scheme">fb386853085405596</string>
+</resources>
